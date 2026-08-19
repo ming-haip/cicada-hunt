@@ -1,0 +1,22 @@
+{
+  "name": "抓知了猴 - Cicada Hunt",
+  "short_name": "抓知了猴",
+  "description": "AR户外实景AI游戏 - 在真实世界中寻找和捕捉知了",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0d1b0d",
+  "theme_color": "#1a3a1a",
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

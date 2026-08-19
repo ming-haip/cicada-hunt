@@ -1,0 +1,77 @@
+{
+  "expo": {
+    "name": "抓知了猴",
+    "slug": "cicada-hunt",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icons/icon.png",
+    "userInterfaceStyle": "dark",
+    "scheme": "cicadahunt",
+    "splash": {
+      "image": "./assets/icons/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0d1b0d"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.cicadahunt.app",
+      "buildNumber": "1",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "抓知了猴需要使用您的位置信息来显示周边的知了猴分布，让您在真实世界中寻找和挖掘知了猴。",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "抓知了猴需要在后台使用位置信息，以便在您靠近知了猴时发送提醒。",
+        "NSCameraUsageDescription": "抓知了猴使用相机来展示AR实景，将虚拟知了猴叠加在真实环境中。",
+        "NSMicrophoneUsageDescription": "抓知了猴使用麦克风来识别真实蝉鸣声。",
+        "UIRequiredDeviceCapabilities": ["location-services", "gps", "camera", "accelerometer", "gyroscope"],
+        "UIBackgroundModes": ["location"]
+      },
+      "config": {
+        "usesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icons/adaptive-icon.png",
+        "backgroundColor": "#0d1b0d"
+      },
+      "package": "com.cicadahunt.app",
+      "versionCode": 1,
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_BACKGROUND_LOCATION",
+        "CAMERA",
+        "VIBRATE",
+        "RECORD_AUDIO"
+      ],
+      "config": {
+        "googleMaps": {
+          "apiKey": "YOUR_GOOGLE_MAPS_API_KEY"
+        }
+      }
+    },
+    "web": {
+      "bundler": "metro",
+      "favicon": "./assets/icons/favicon.png"
+    },
+    "plugins": [
+      "expo-location",
+      "expo-font"
+    ],
+    "extra": {
+      "apiBaseUrl": "http://10.12.208.217:8080",
+      "eas": {
+        "projectId": "cicada-hunt-app"
+      }
+    },
+    "description": "一款融合AR技术与真实户外探索的AI游戏。了解知了从地下若虫到枝头鸣蝉的奇妙一生：在真实树林中探测挖掘知了猴，使用蝉雷达追踪捕捉飞行中的蝉。",
+    "privacy": "https://cicada-hunt.app/privacy",
+    "primaryColor": "#4caf50",
+    "backgroundColor": "#0d1b0d",
+    "categories": ["games", "adventure", "education"],
+    "keywords": ["知了", "蝉", "AR游戏", "户外", "探索", "昆虫", "自然"],
+    "locales": {
+      "zh": "./assets/locales/zh.json"
+    }
+  }
+}
